@@ -11,9 +11,9 @@ from dotenv import load_dotenv
 load_dotenv()
 logger = logging.getLogger(__name__)
 
-from services.gemini_client import GeminiClient
-from services.qdrant_client import upsert_chunk, search_chunks
-from services.opus_client import run_review_workflow
+from backend.services.gemini_client import GeminiClient
+from backend.services.qdrant_client import upsert_chunk, search_chunks
+from backend.services.opus_client import run_review_workflow
 
 
 app = FastAPI(title="AutoRAG OS Backend", version="1.0.0")
